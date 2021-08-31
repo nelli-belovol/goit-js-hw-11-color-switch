@@ -16,6 +16,6 @@ start.addEventListener('click', () => {
 });
 
 stop.addEventListener('click', () => {
-  start.setAttribute('disabled', false);
+  start.removeAttribute('disabled');
   clearInterval(timerId);
 });
