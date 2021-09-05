@@ -6,7 +6,7 @@ import { randomIntegerFromInterval } from './js/randomColor.js';
 const { start, stop, body } = refs;
 
 let colorIndex;
-let timerId;
+let timerId = null;
 start.addEventListener('click', () => {
   start.setAttribute('disabled', true);
   timerId = setInterval(() => {
