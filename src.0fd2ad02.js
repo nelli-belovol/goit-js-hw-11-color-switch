@@ -7,6 +7,6 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"SS3i":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.randomIntegerFromInterval=void 0;const e=(e,r)=>Math.floor(Math.random()*(r-e+1)+e);exports.randomIntegerFromInterval=e;
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss");var e=require("./js/colors.js"),r=t(require("./js/refs.js")),s=require("./js/randomColor.js");function t(e){return e&&e.__esModule?e:{default:e}}const{start:o,stop:l,body:a}=r.default;let n,d;o.addEventListener("click",()=>{o.setAttribute("disabled",!0),d=setInterval(()=>{n=(0,s.randomIntegerFromInterval)(0,e.colors.length-1),a.style.backgroundColor=e.colors[n]},1e3)}),l.addEventListener("click",()=>{o.removeAttribute("disabled"),clearInterval(d)});
+"use strict";require("./sass/main.scss");var e=require("./js/colors.js"),r=t(require("./js/refs.js")),s=require("./js/randomColor.js");function t(e){return e&&e.__esModule?e:{default:e}}const{start:l,stop:o,body:n}=r.default;let a,d=null;l.addEventListener("click",()=>{l.setAttribute("disabled",!0),d=setInterval(()=>{a=(0,s.randomIntegerFromInterval)(0,e.colors.length-1),n.style.backgroundColor=e.colors[a]},1e3)}),o.addEventListener("click",()=>{l.removeAttribute("disabled"),clearInterval(d)});
 },{"./sass/main.scss":"clu1","./js/colors.js":"oLA8","./js/refs.js":"VyiV","./js/randomColor.js":"SS3i"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-11-color-switch/src.9a0aebf8.js.map
+//# sourceMappingURL=/goit-js-hw-11-color-switch/src.0fd2ad02.js.map
